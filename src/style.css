@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .displayfont {
+    font-size: clamp(7rem, -1.1951rem + 21.8537vw, 18.2rem);
+  }
+  .boblebaggrund {
+    background-image: url("/img/baggrund.png");
+    background-size: cover;
+    height: 95vh;
+    background-position: center center;
+  }
+
+  .boblefooter {
+    background-image: url("/img/baggrund.png");
+    background-size: cover;
+    height: 30h;
+    background-position: center center;
+  }
+
+  @media (min-width: 800px) {
+    #sticky {
+      max-width: 1200px;
+      margin: 80px auto;
+
+      display: flex;
+      flex-flow: row wrap;
+    }
+
+    .projects {
+      height: 2500px;
+      padding: 90px;
+
+      flex: 1 1 70%;
+    }
+
+    aside {
+      height: 300px;
+      padding: 40px;
+
+      flex: 1 1 30%;
+      min-width: 300px;
+
+      top: 0;
+      position: sticky;
+      align-self: flex-start;
+    }
+  }
+}
