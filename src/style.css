@@ -10,19 +10,6 @@
   .displayfont {
     font-size: clamp(7rem, -1.1951rem + 21.8537vw, 18.2rem);
   }
-  .boblebaggrund {
-    background-image: url("/img/baggrund.png");
-    background-size: cover;
-    height: 95vh;
-    background-position: center center;
-  }
-
-  .boblefooter {
-    background-image: url("/img/baggrund.png");
-    background-size: cover;
-    height: 30h;
-    background-position: center center;
-  }
 
   @media (min-width: 800px) {
     #sticky {
@@ -51,5 +38,21 @@
       position: sticky;
       align-self: flex-start;
     }
+  }
+  .lineheight {
+    line-height: 5.4rem;
+    font-size: 4.5rem;
+  }
+  .imgwidth {
+    max-width: 149px;
+  }
+  .largeimgwidth {
+    max-width: 248px;
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
   }
 }
